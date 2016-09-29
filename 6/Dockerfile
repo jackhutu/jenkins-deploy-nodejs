@@ -11,5 +11,5 @@ RUN mkdir -p /var/www
 
 ONBUILD WORKDIR /var/www
 ONBUILD COPY . /var/www
-ONBUILD npm install --production
-ONBUILD ENTRYPOINT ["npm", "start"]
+ONBUILD RUN npm install --production
+ONBUILD CMD ["npm", "start"]
