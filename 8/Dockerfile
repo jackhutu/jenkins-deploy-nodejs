@@ -5,7 +5,7 @@ MAINTAINER Jack Hu <hello@jackhu.top>
 RUN npm install -g node-gyp && \
     npm install -g pm2 && \
     npm install -g cnpm && \
-    npm cache clean && \
+    npm cache clean --force && \
     rm -rf /tmp/* /var/tmp/*
 
 RUN mkdir -p /var/www
